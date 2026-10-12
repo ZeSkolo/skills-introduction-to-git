@@ -1,0 +1,48 @@
+{
+  "repo": "skills-introduction-to-git",
+  "title": "Stack Overflown",
+  "subtitle": "Play the original developer puzzle game from a dedicated project workspace.",
+  "tools": [
+    {
+      "id": "preview",
+      "kind": "preview",
+      "title": "Output preview",
+      "description": "Open the original project\u2019s existing frontend. Source files are preserved.",
+      "actions": [
+        {
+          "id": "open",
+          "label": "Open output",
+          "fields": [
+            {
+              "key": "page",
+              "label": "Page",
+              "type": "select",
+              "value": "src/index.html",
+              "options": [
+                {
+                  "value": "src/index.html",
+                  "label": "Stack Overflown game"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "list",
+          "label": "List pages",
+          "fields": []
+        }
+      ],
+      "base": "."
+    }
+  ],
+  "previews": [
+    {
+      "path": "src/index.html",
+      "label": "Stack Overflown game",
+      "root": "src"
+    }
+  ],
+  "runtime": "Existing browser game preserved \u00b7 No backend needed beyond the local preview server",
+  "port": 8111
+}
